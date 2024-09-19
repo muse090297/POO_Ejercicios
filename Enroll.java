@@ -71,5 +71,18 @@ public class Enroll {
 		Courses materia = courses.get(courseName);
 		return materia.countStudents();
 	}
+	
+	public void BestGrade(String courseName) { 
+		Courses materia = courses.get(courseName);
+		int mayor = 0;
+		if (materia!=null) {
+			for(Student student : materia.enrolledStudents) {
+				if(mayor<student.grade) {
+					mayor = student.grade;
+				}
+			}
+		}
+		System.out.println("El promedio mas alto de: " + courseName +  " es:" +mayor);
+	}
 
 }
