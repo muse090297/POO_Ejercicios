@@ -84,5 +84,21 @@ public class Enroll {
 		}
 		System.out.println("El promedio mas alto de: " + courseName +  " es:" +mayor);
 	}
+	
+	//Calculamos el promedio del curso
+	public void GradePromedio(String courseName) {
+		Courses materia = courses.get(courseName);
+		int totalStudents = materia.countStudents();
+		float Promedio=0;
+		float Final;
+		for(Student student : materia.enrolledStudents) {
+			Promedio = Promedio + student.grade;
+		}
+		Final = Promedio / totalStudents;
+		//System.out.println(Promedio);
+		//System.out.println(totalStudents);
+		System.out.println("El promedio del curso " + courseName + " es: " + Final);
+	}
+	
 
 }

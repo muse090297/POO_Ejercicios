@@ -12,7 +12,17 @@ public class Student {
 		this.registration = registration;
 		this.grade = grade;
 		this.year = year;
-	}
+	}//Constructor 1
+	
+	public Student(String lastName, int registration, int grade, int year) {
+		this("DEFAULT_NAME", lastName, registration, grade, year);
+	}//Constructor2
+	
+	public Student(String lastName, int registration, int grade) {
+		this("DEFAULT_NAME", lastName, registration, grade, 1);
+	}//Constructor3
+	
+	
 
 	public void printFullName() {
 		System.out.println("El nombre completo del alumno es: " + this.firstName + " " + this.lastName);

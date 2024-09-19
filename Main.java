@@ -86,6 +86,11 @@ public class Main {
 		inscripcionAlumno.BestGrade(nombreMateria3);
 		inscripcionAlumno.BestGrade(nombreMateria2);
 		inscripcionAlumno.BestGrade(nombreMateria);
+		
+		System.out.println("\n\n********************* PROMEDIO DEL CURSO****************************************\n");
+		inscripcionAlumno.GradePromedio(nombreMateria4);
+		inscripcionAlumno.GradePromedio(nombreMateria2);
+		inscripcionAlumno.GradePromedio(nombreMateria);
 
 	}
 
