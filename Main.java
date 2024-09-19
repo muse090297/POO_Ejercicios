@@ -82,7 +82,11 @@ public class Main {
 
 		//inscripcionAlumno.displayCoursesInformation( nombreMateria );
 		
-		
+		System.out.println("\n\n********************* PROMEDIO MAS ALTO****************************************\n");
+		inscripcionAlumno.BestGrade(nombreMateria3);
+		inscripcionAlumno.BestGrade(nombreMateria2);
+		inscripcionAlumno.BestGrade(nombreMateria);
+
 	}
 
 }
