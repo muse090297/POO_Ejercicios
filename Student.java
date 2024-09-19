@@ -20,7 +20,7 @@ public class Student {
 
 	public boolean isApproved() {
 		// TODO implement: should return true if grade >= 60
-		if (this.grade >=60) {
+		if (this.grade >= 60) {
 			return true;
 		} else {
 			return false;
@@ -32,13 +32,20 @@ public class Student {
 		// is >= 60
 		// Make year = year + 1, and print "Congratulations" if the student has been
 		// approved
-		if (this.grade >=60) {
-			this.year=year+1;
-			System.out.println("Congratulation, pasaste a " + this.year + "°");
+		if (this.grade >= 60) {
+			this.year = year + 1;
+			System.out.println("Congratulation, you passed a " + this.year + " year");
 		} else {
-			System.out.println("No pasaste de año");
+			System.out.println("Sorry, you failed the year");
 		}
-		
+
 		return 0;
 	}// Method changeYearIfApproved
+
+	public String toString() {
+		return " FirstName= " + this.firstName + " LastName= " + this.lastName +  
+				" Registration= " + this.registration + " Grade= " + this.grade + 
+				" Year= " + this.year;
+	}
+
 }

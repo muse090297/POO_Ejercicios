@@ -7,11 +7,10 @@ public class Courses {
 	int year;
 	List<Student> enrolledStudents = new ArrayList<>();
 	
-	public Courses(String courseName, String professorName, int year, List<Student> enrolledStudents) {
+	public Courses(String courseName, String professorName, int year) {
 		this.courseName = courseName;
 		this.professorName =  professorName;
 		this.year = year;
-		this.enrolledStudents = enrolledStudents;
 	}
 
 	public void enroll(Student student) {
@@ -39,5 +38,10 @@ public class Courses {
     {
         return enrolledStudents;
     }
+	
+	public String toString() {
+		return "CourseName= " + this.courseName + " ProfessorName= " + this.professorName +  
+				" Year= " + this.year + " EnrolledStudents= " + this.enrolledStudents;
+	}
 
 }
